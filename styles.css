@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'poppins';
+    overflow: hidden;
+}
+
+.container{
+    background-color: #6d5a5a;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    top: 10px;
+    margin: 10px;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+.story{
+    padding-top: 70px;
+}
+
+img{
+    width: 200px;
+}
+
+.img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-2{
+    animation-name: scroll;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateY(-25%);
+    }
+
+    /* to{
+        transform: translateY(30%);
+    } */
+}
+
+.img-1{
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(25%);
+    }
+
+    /* to{
+        transform: translateY(%);
+    } */
+}
+
